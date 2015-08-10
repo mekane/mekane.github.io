@@ -1,0 +1,18 @@
+https://help.github.com/articles/using-jekyll-with-pages/
+
+You can just commit Jekyll-formatted pages and push them to github. They will be run through Jekyll. 
+
+Install the Github Jekyll package to run it locally and match the github settings.
+
+* Need Ruby
+* Install bundler `sudo gem install bundler`
+* Create a file in your site's repository called Gemfile and add the line gem 'github-pages'.
+* After that, simply run the command, `bundle install` and you're good to go. 
+
+To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll with Bundler. 
+
+* Use the command `bundle exec jekyll serve` in the root of your repository
+* Your site should be available at http://localhost:4000
+
+
+
