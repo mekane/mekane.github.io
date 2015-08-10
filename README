@@ -14,5 +14,5 @@ To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll wi
 * Use the command `bundle exec jekyll serve` in the root of your repository
 * Your site should be available at http://localhost:4000
 
-
+To keep Jekyll up to date, run `bundle update`
 
