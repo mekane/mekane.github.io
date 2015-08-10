@@ -1,10 +1,15 @@
-<!doctype html>
-<html>
-  <head>
-    <title>martykane.org</title>
-  </head>
-  <body>
-    Hello
-  </body>
-</html>
+---
+  layout: default
+  title: index
+---
 
+<p>Main Page</p>
+
+<p>List of posts:</p>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
