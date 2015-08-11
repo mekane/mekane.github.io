@@ -3,13 +3,20 @@
   title: index
 ---
 
-<p>Main Page</p>
+<h2>Welcome</h2>
 
 <p>List of posts:</p>
-<ul>
+<ul class="posts">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+    <li class="post">
+      <header>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </header>
+      <div class="date">({{ post.date }})</div>
+      <p class="excerpt">{{ post.content | strip_html | truncatewords: 30 }}</p>
+      <a class="read-more" href="{{ post.url }}">Read more</a>
     </li>
   {% endfor %}
 </ul>
+
+

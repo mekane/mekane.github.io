@@ -1,0 +1,17 @@
+header.main-header {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        white-space: nowrap;
+        @extend .top-level;
+    }
+
+    hr {
+        border-color: rgb(120,120,180); 
+        border-style: dashed;
+        border-width: 1px 0 1px;
+        height: 8px;
+        @extend .top-level;
+        //width: 500px;
+    }
+}

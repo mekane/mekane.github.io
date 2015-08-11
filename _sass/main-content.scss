@@ -1,0 +1,11 @@
+main {
+    @extend .top-level;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    .posts {
+        .post {
+            margin-bottom: 1rem;
+        }
+    }
+}
